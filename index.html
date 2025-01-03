@@ -52,7 +52,7 @@
       var canvas = document.querySelector("#unity-canvas");
       var container = document.querySelector("#unity-container");
       
-      const ASPECT_RATIO = 600 / 400; // Original aspect ratio
+      const ASPECT_RATIO = 600 / 400;
       
       function updateCanvasSize() {
         const windowWidth = window.innerWidth;
@@ -74,11 +74,9 @@
         canvas.style.width = width + 'px';
         canvas.style.height = height + 'px';
         
-        // Optional: log new dimensions
         console.log(`Canvas size: ${width}x${height}`);
       }
 
-      // Update size immediately and on window resize
       window.addEventListener('resize', updateCanvasSize);
       updateCanvasSize();
 
